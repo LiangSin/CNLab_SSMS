@@ -1,0 +1,149 @@
+.status-running {
+  color: green;
+  font-weight: bold;
+}
+
+.status-stopped {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-error {
+  color: red;
+  font-weight: bold;
+}
+
+.server-manage-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* .server-manage-table th, .server-manage-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+} */
+
+/* .server-manage-table tr:hover {
+  background-color: #f5f5f5;
+} */
+.server-manage-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.server-manage-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* .server-title {
+  background-color: #0078D7;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+} */
+
+.server-manage-root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.server-manage-table {
+  min-width: 550px;
+  width: fit-content;
+}
+.server-manage-table th, .server-manage-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.server-manage-action-cell {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+}
+
+.server-manage-action-button2 {
+  margin-left: 8px;
+}
+
+.btn {
+  border: none;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Start = soft green */
+.start-btn {
+  background-color: #A8D5BA; /* 柔和綠 */
+  color: #1a3e2e;
+}
+.start-btn:hover {
+  background-color: #91c9aa;
+}
+
+/* Stop = 鵝黃色 */
+.stop-btn {
+  background-color: #FBE6A2;
+  color: #665200;
+}
+.stop-btn:hover {
+  background-color: #f7db85;
+}
+
+/* Delete = 莫蘭迪紅色 */
+.delete-btn {
+  background-color: #D9A5A5; /* Morandi red */
+  color: #2c1111;
+}
+.delete-btn:hover {
+  background-color: #c88e8e;
+}
+
+
+.server-manage-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.server-input,
+.server-select {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.custom-btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-btn {
+  background-color: #b8d9f6;
+  color: #1a3e5e;
+}
+.info-btn:hover {
+  background-color: #9fcaed;
+}
+
+.success-btn {
+  background-color: #c9e5b1;
+  color: #2e4a1a;
+}
+.success-btn:hover {
+  background-color: #b2d89a;
+}
+
+

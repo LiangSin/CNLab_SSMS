@@ -1,0 +1,13 @@
+# user.ldif
+dn: uid=<admin_user>,ou=people,dc=<domain-1>,dc=<domain-2>,dc=<domain-3>
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: <admin_user>
+uid: <admin_user>
+uidNumber: 1234
+gidNumber: 123
+homeDirectory: /home/<admin_user>
+loginShell: /bin/bash
+userPassword: <hashed_passwd>
