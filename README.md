@@ -27,6 +27,7 @@ cd frontend/reactCnlabMC
 npm run dev -- --host 0.0.0.0
 
 # backend
+cd backend
 uvicorn app.main:app --reload --host 0.0.0.0
 ```
 The frontend will run at port 5173, and the backend at 8000. We will use nginx as a reverse proxy to forward requests to port 80.
