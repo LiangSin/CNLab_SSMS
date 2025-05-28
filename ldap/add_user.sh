@@ -25,7 +25,8 @@ fi
 PASSWORD_HASH=$(slappasswd -s "$PASSWORD")
 
 # 新增 LDAP 使用者
-cat <<EOF | ldapadd -x -D "cn=admin,dc=cnlab,dc=csie,dc=ntu" -w cnlab2016usercnlab -H ldap:///
+# TODO: please modify <admin_passwd>
+cat <<EOF | ldapadd -x -D "cn=admin,dc=cnlab,dc=csie,dc=ntu" -w <admin_passwd> -H ldap:///
 dn: uid=${NAME},ou=people,dc=cnlab,dc=csie,dc=ntu
 objectClass: top
 objectClass: account

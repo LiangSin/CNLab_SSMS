@@ -8,7 +8,7 @@ if [ $# -ne 1 ]; then
 fi
 
 NAME=$1
-
-ldapdelete -x -D "cn=admin,dc=cnlab,dc=csie,dc=ntu" -w cnlab2016usercnlab \
+# TODO: please modify <admin_passwd>
+ldapdelete -x -D "cn=admin,dc=cnlab,dc=csie,dc=ntu" -w <admin_passwd> \
   "uid=${NAME},ou=people,dc=cnlab,dc=csie,dc=ntu"
 
